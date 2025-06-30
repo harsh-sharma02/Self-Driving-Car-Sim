@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Self Driving Car Simulation</title>
+</head>
+<body>
+    <h2>Self Driving Car Simulation (using ML)</h2>
+    <div class="container">
+        <div class="stats">
+            <h2>Generation - <span id="genNumber">1</span></h2>
+            <button id="savePlayerBtn">Save Best Player</button>
+            <button id="newGenerationBtn">New Generation</button>
+        </div>
+        <canvas id="myCanvas" width="700px" height="700px"></canvas>
+        <div class="control">
+            <button id="runSimulationBtn">Run New Simulation</button>
+            <button id="lastNodeDeleteBtn">Delete Last Node</button>
+            <button id="enableEditBtn">Allow Editing</button>
+            <button id="disableEditBtn">Disable Editing</button>
+            <button id="saveDataBtn">Save Graph Data</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/clipper-lib@6.4.2/clipper.js"></script>
+
+    <script src="data/point.js"></script>
+    <script src="data/segment.js"></script>
+    <script src="data/graph.js"></script>
+    <script src="data/myMath.js"></script>
+    <script src="data/graphEditor.js"></script>
+    <script src="data/road.js"></script>
+    <script src="data/polygon.js"></script>
+    <script src="data/car.js"></script>
+    <script src="data/sensors.js"></script>
+    <script src="data/network.js"></script>
+    <script src="data/playGround.js"></script>
+    <script src="data/roadJunction.js"></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
